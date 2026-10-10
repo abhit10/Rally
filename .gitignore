@@ -1,0 +1,47 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+
+# Python and editor artefacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated data, videos, databases and model binaries
+var/
+outputs/
+tmp/
+weights/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.pt
+*.pth
+*.onnx
+*.engine
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Future web application
+node_modules/
+.next/
+coverage/

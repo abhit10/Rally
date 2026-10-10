@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "courttrace"
+version = "0.1.0"
+description = "English single-camera racket-sports match review from one camera"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "Apache-2.0"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+dependencies = [
+    "numpy==2.3.5",
+    "opencv-python-headless==5.0.0.93",
+    "fastapi==0.128.0",
+    "uvicorn==0.40.0",
+    "python-multipart==0.0.20",
+    "httpx==0.28.1",
+]
+
+[project.scripts]
+courttrace-calibrate = "courttrace.calibrate:main"
+courttrace-app = "courttrace.app:main"
+
+[tool.setuptools.packages.find]
+include = ["courttrace*"]
+
+[tool.setuptools.package-data]
+courttrace = ["web/*"]

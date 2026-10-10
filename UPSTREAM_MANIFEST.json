@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/yo-WASSUP/Good-Badminton",
+  "source": "User-supplied local archive; upstream commit not established",
+  "files": [
+    {
+      "source": "badminton_analysis/court/detector.py",
+      "destination": "courttrace/court/detector.py",
+      "source_sha256": "e8f208f134bdd1fa715196d67cdcbe83b795ce38d76a601a9e33c2422f534ffb"
+    },
+    {
+      "source": "badminton_analysis/court/reference.py",
+      "destination": "courttrace/court/reference.py",
+      "source_sha256": "a6112633bb29187495e8309afe5c6015e453c90a36a1514183f67c37023ac8e4"
+    },
+    {
+      "source": "badminton_analysis/detection/yolo_pose.py",
+      "destination": "courttrace/detection/yolo_pose.py",
+      "source_sha256": "6d65dcdac4856c1d050557268138bc80759fed98207e00d24a05c3a396c90fe4"
+    },
+    {
+      "source": "badminton_analysis/detection/shuttlecock.py",
+      "destination": "courttrace/detection/shuttlecock.py",
+      "source_sha256": "d77ee7019707e98a924fb3e5830d62d406971305bc4dbbf12e2d24433fb5fc13"
+    },
+    {
+      "source": "badminton_analysis/data/writer.py",
+      "destination": "courttrace/data/writer.py",
+      "source_sha256": "cd5c6a82b0b63ef098f4129a4aea541ac3cd5162459554d494fd146ed4d50588"
+    }
+  ]
+}
