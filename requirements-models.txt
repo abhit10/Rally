@@ -1,3 +1,0 @@
--r requirements.txt
-# Optional. Review upstream dependency and model licences before distribution.
-ultralytics>=8.3,<9
