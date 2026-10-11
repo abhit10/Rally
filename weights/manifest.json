@@ -1,0 +1,51 @@
+[
+  {
+    "file": "tennis-ball.pt",
+    "sha256": "4cae1d1239af94f19b9f37502ea9c0f10a82c04d22e7423bd4cf2764c6224f4e",
+    "source": "https://github.com/yo-WASSUP/Good-Tennis/releases/download/v0.1.0/tennis-ball.pt",
+    "release": "v0.1.0",
+    "bytes": 20379774
+  },
+  {
+    "file": "yolo11s-pose.pt",
+    "sha256": "1060bda4a27012060eca246f9b2adeea22eabb045a1e58f8d229be29b7ebc2ba",
+    "source": "https://github.com/yo-WASSUP/Good-Tennis/releases/download/v0.1.0/yolo11s-pose.pt",
+    "release": "v0.1.0",
+    "bytes": 20373161
+  },
+  {
+    "file": "yolox_nano_8xb8-300e_humanart-40f6f0d0.onnx",
+    "sha256": "1450966de24902b18aada1a78913d7efd8fc8dcd51bd4d0d5591476bd4a38821",
+    "source": "https://github.com/yo-WASSUP/Good-Tennis/releases/download/v0.1.0/yolox_nano_8xb8-300e_humanart-40f6f0d0.onnx",
+    "release": "v0.1.0",
+    "bytes": 3722395
+  },
+  {
+    "file": "rtmpose-s_simcc-body7_pt-body7_420e-256x192-acd4a1ef_20230504.onnx",
+    "sha256": "9aeb635b83f86aea45cf45d85798f7eba1a162de8e0d721c44e54fe5eebaf47d",
+    "source": "https://github.com/yo-WASSUP/Good-Tennis/releases/download/v0.1.0/rtmpose-s_simcc-body7_pt-body7_420e-256x192-acd4a1ef_20230504.onnx",
+    "release": "v0.1.0",
+    "bytes": 21890172
+  },
+  {
+    "file": "rtmo-s_8xb32-600e_body7-640x640-dac2bf74_20231211.onnx",
+    "sha256": "d0703d40d19f3921da51ae725402d5fdae4d2478c7442072d3101bd396f370d8",
+    "source": "https://github.com/yo-WASSUP/Good-Tennis/releases/download/v0.1.0/rtmo-s_8xb32-600e_body7-640x640-dac2bf74_20231211.onnx",
+    "release": "v0.1.0",
+    "bytes": 39617685
+  },
+  {
+    "file": "yolo11s-ball.pt",
+    "sha256": "c21113960fadce7f96b9f70f86802142482775405f60a9761328491868edf31b",
+    "source": "https://github.com/yo-WASSUP/Good-Badminton/releases/download/v0.1.0/yolo11s-ball.pt",
+    "release": "v0.1.0",
+    "bytes": 19173075
+  },
+  {
+    "file": "yolo11n-pose.pt",
+    "sha256": "869e83fcdffdc7371fa4e34cd8e51c838cc729571d1635e5141e3075e9319dc0",
+    "source": "https://github.com/yo-WASSUP/Good-Badminton/releases/download/v0.1.0/yolo11n-pose.pt",
+    "release": "v0.1.0",
+    "bytes": 6255593
+  }
+]

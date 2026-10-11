@@ -1,0 +1,38 @@
+services:
+  api:
+    build: .
+    ports: ["127.0.0.1:8000:8000"]
+    environment: &environment
+      DATABASE_URL: postgresql+psycopg://racket:racket@database:5432/racket
+      QUEUE_MODE: celery
+      REDIS_URL: redis://redis:6379/0
+    volumes: ["./data:/app/data", "./weights:/app/weights:ro"]
+    depends_on:
+      database: {condition: service_healthy}
+      redis: {condition: service_healthy}
+  worker:
+    build: .
+    command: celery -A app.queue:celery worker --loglevel=info --concurrency=1 --pool=solo
+    environment: *environment
+    volumes: ["./data:/app/data", "./weights:/app/weights:ro"]
+    depends_on:
+      database: {condition: service_healthy}
+      redis: {condition: service_healthy}
+  database:
+    image: postgres:17-alpine
+    environment: {POSTGRES_USER: racket, POSTGRES_PASSWORD: racket, POSTGRES_DB: racket}
+    volumes: ["database:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U racket"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+volumes:
+  database:

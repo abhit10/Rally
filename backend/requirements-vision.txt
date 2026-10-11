@@ -1,0 +1,7 @@
+-r requirements.txt
+torch>=2.5,<3
+torchvision>=0.20,<1
+ultralytics>=8.3,<9
+onnxruntime>=1.20,<2
+rtmlib>=0.0.13,<1
+lap>=0.5.12

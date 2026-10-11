@@ -1,0 +1,17 @@
+{
+  "label": "optimized",
+  "frames": 90,
+  "seconds": 37.615,
+  "fps": 2.39,
+  "inferred_frames": 30,
+  "status": "completed",
+  "error": null,
+  "session_id": "9ee4bc7753a94bf898b2df61707fb929",
+  "runtime": {
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "half_precision": true,
+    "inference_size": 640,
+    "pose_provider": "PyTorch"
+  }
+}
