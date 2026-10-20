@@ -20,6 +20,16 @@ from .session_management import delete_session
 from .queue import enqueue
 
 app = FastAPI(title='Rally / Racket Intelligence', version='0.1.0')
+from .demo_access import DemoAccess
+from fastapi.middleware.cors import CORSMiddleware
+import os
+app.add_middleware(DemoAccess)
+demo_origins = [value.strip() for value in os.getenv('RALLY_ALLOWED_ORIGINS', '').split(',') if value.strip()]
+if demo_origins:
+    app.add_middleware(CORSMiddleware, allow_origins=demo_origins,
+                       allow_methods=['GET', 'POST', 'DELETE'],
+                       allow_headers=['Content-Type'], expose_headers=['Content-Range', 'Accept-Ranges'])
+
 Sport = Literal['tennis', 'badminton']
 Pose = Literal['yolo-small', 'yolo-nano', 'rtmpose', 'rtmo']
 BUSY = {'queued', 'loading', 'processing', 'encoding', 'deleting', 'deletion_failed'}
